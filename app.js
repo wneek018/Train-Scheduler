@@ -22,7 +22,7 @@ $(document).ready(function () {
         var trainName = $('#train-name-input').val().trim();
         var destination = $('#train-destination-input').val().trim();
         var firstTrainTime = moment($('#first-train-time-input').val().trim(), "hh:mm a").format("hh:mm a");
-        var trainFrequency = moment($('#train-frequency-input').val().trim(), "mm").format("mm");
+        var trainFrequency = $('#train-frequency-input').val().trim();
 
         // Creates local "temporary" object for holding new train data
         var newTrain = {
@@ -35,6 +35,9 @@ $(document).ready(function () {
         // pushes new train data to the database
         database.ref().push(newTrain);
     });
+
+    // to clear inputs
+    //database.ref().remove();
 
     // creates the newest data row from storage and adds to html
     database.ref().on("child_added", function (childSnapshot) {
