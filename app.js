@@ -34,6 +34,9 @@ $(document).ready(function () {
 
         // pushes new train data to the database
         database.ref().push(newTrain);
+
+        //add the clear input field HERE
+        $('#train-info-input').trigger("reset");
     });
 
     // to clear inputs
@@ -58,7 +61,7 @@ $(document).ready(function () {
         var minutesAway = nextArrival.diff(currentTime, "minutes");
 
         // create the newest data row
-        var newRow = $('<div class="row">').append(
+        var newRow = $('<div class="row new-row">').append(
             $('<div class="col-md-3">').text(trainName),
             $('<div class="col-md-3">').text(destination),
             $('<div class="col-md-2">').text(trainFrequency),

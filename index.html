@@ -19,13 +19,17 @@
 
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
+
+
 </head>
 
 <body>
     <!-- container that holds all info-->
     <div class="container">
         <!--Jumbotron-->
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron card">
             <div class="container text-center">
                 <h1 class="display-4">Train Tracker</h1>
             </div>
@@ -62,7 +66,7 @@
         <div class="card">
             <h5 class="card-header">Train Inputs:</h5>
             <div class="card-body">
-                <form>
+                <form id="train-info-input">
                     <div class="form-group">
                         <label for="train-name-input">Train Name</label>
                         <input type="train-name" class="form-control" id="train-name-input"
@@ -84,7 +88,7 @@
                             placeholder="Enter train frequency" type="number">
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary" id="submit-train-info">Submit</button>
+                        <button type="submit" class="btn btn-info" id="submit-train-info">Submit</button>
                     </div>
                 </form>
             </div>

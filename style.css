@@ -1,3 +1,33 @@
 .card {
     margin-bottom: 2rem;
+    border: none;
+}
+
+.jumbotron {
+    background-color: #808080;
+    border: none;
+}
+
+.new-row {
+    border-top-color:#17a2b8;
+    border-top-width: 1px;
+    border-top-style: solid;
+    padding: 3px 2px;
+}
+
+body {
+    background: url(images/trainbackground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.display-4, .card-header {
+    font-family: 'Cinzel', serif;
+    color: #ffd700;
+}
+
+.card-header {
+    background-color: #808080;
 }
